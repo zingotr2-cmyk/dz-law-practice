@@ -1,0 +1,6 @@
+{
+  "name": "المكتب القضائي - DZ Law Practice Manager",
+  "description": "نظام حديث ومتكامل لتسيير مكاتب المحاماة في الجزائر وإدارة القضايا والملفات القانونية بذكاء",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

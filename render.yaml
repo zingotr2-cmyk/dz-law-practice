@@ -1,0 +1,22 @@
+# Render Blueprint Specification
+# Use this configuration file to deploy the entire full-stack application (React frontend + Express backend) on Render.
+services:
+  - type: web
+    name: judicial-office-platform
+    runtime: node
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3000
+      - key: RESEND_API_KEY
+        sync: true
+        placeholder: "Your Resend API Key (re_...)"
+      - key: OFFICIAL_SENDER_EMAIL
+        sync: true
+        placeholder: "e.g. المكتب القضائي <no-reply@send.niklinx.com>"
+      - key: GEMINI_API_KEY
+        sync: true
+        placeholder: "Your Gemini API Key"
